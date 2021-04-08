@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="/static/style.css" rel="stylesheet" />
+    <title>Sign In || Keo Wallet</title>
+  </head>
+  <body>
+    <div class="container-fluid nav-cont">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="assets/Logo.png" class="d-inline-block align-top" alt="" />
+        </a>
+        <a href="/signup.html" class="sign-in"
+          ><button class="btn my-2 my-sm-0" type="button">Sign Up</button></a
+        >
+      </nav>
+    </div>
+    <div class="spacing"></div>
+    <div class="container-fluid">
+      <div class="row s-row">
+        <div class="s-form col-lg-6 col-md-12 mx-auto">
+          <div>
+            <h1 class="hidden">Welcome back</h1>
+            <h1 class="hide">Log in to your Wallet</h1>
+            <p>Fill in the required details</p>
+            <form id="form">
+              <div class="form-group">
+                <label for="Phone-number">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="Phone-number"
+                  placeholder="+234123456789"
+                />
+                <small>Error message</small>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+                <small>Error message</small>
+              </div>
+              <div class="fpassword">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkbox"
+                  />
+                  <label class="form-check-label" for="checkbox"
+                    >Remember Me</label
+                  >
+                </div>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit">Log In</button>
+              <p class="option hidden">
+                Don't have an account? &nbsp; <span class="pink">Sign Up</span>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="img col-lg-5 mx-auto">
+          <div class="s-right-img">
+            <img src="/assets/Group 48.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  transition: 300ms ease-in-out;
+}
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+.nav-cont {
+  height: 10vh;
+  padding: 0 5vw;
+}
+.nav-cont nav {
+  height: 100%;
+  background-color: #fff !important;
+}
+nav .login,
+nav .sign-in {
+  width: 100px;
+  border: 2px solid #374988;
+  border-radius: 5px;
+  text-decoration: none;
+}
+nav button {
+  width: 100%;
+  color: #374988;
+  background-color: #fff;
+}
+nav .login:hover,
+nav .sign-in:hover {
+  border: 2px solid #fff;
+}
+nav .login:hover button,
+nav .sign-in:hover button {
+  background-color: #374988;
+  color: #fff;
+}
+.spacing {
+  width: 100%;
+  height: 5vh;
+}
+.hidden {
+  display: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+div.row {
+  margin: 0;
+  height: 100vh;
+  padding: auto !important;
+}
+div.s-row {
+  height: 80vh !important;
+}
+
+.s-form div {
+  width: 100%;
+}
+.blue {
+  color: #374988;
+}
+.pink {
+  color: rgb(214, 71, 95);
+  font-weight: 700;
+}
+div.right-img,
+.form {
+  height: 100vh;
+}
+.right-img img {
+  width: 100%;
+  height: 100%;
+}
+div.row .s-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+}
+.form h1,
+.s-form h1 {
+  color: #374988;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.form p,
+.s-form p {
+  color: #1c2544;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.form .form-group label,
+.s-form .form-group label {
+  color: #1c2544;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.form-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #1c2544;
+  border-radius: 0;
+  padding-left: 0;
+  width: 70%;
+}
+.fpassword a {
+  color: #374988;
+  text-decoration: underline;
+}
+.s-form .fpassword {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-form .form-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #1c2544;
+  border-radius: 0;
+  padding-left: 0;
+  width: 65%;
+}
+.fpassword .form-check {
+  width: 30%;
+}
+.form-group input:focus {
+  outline-style: none;
+}
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+form button,
+.s-form form button {
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 20%;
+  background-color: #374988;
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.s-form form button {
+  width: 25%;
+}
+.form-group.success input,
+input:valid {
+  border-color: var(--success-color);
+}
+.form-group.error input,
+input:invalid {
+  border-color: var(--error-color);
+}
+
+.form-group small {
+  color: var(--error-color);
+  visibility: hidden;
+}
+
+.form-group.error small {
+  visibility: visible;
+}
+@media only screen and (max-width: 770px) {
+  div.img {
+    display: none;
+  }
+  .hidden {
+    display: unset;
+  }
+  .hide {
+    display: none;
+  }
+  a.login {
+    display: none;
+  }
+  .form-group input,
+  .s-form .form-group input {
+    width: 100%;
+    border: 1px solid #1c2544;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+  form button,
+  .s-form form button {
+    width: 100%;
+  }
+  .s-form .fpassword {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .spacing {
+    height: 1vh;
+  }
+  .fpassword .form-check {
+    width: 50%;
+  }
+
+  div.row .s-form {
+    height: 90vh;
+  }
+  .form h1,
+  .s-form h1 {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+  .form p,
+  .s-form p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .s-form p {
+    margin-top: 10px;
+  }
+  .form .form-group label,
+  .s-form .form-group label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
